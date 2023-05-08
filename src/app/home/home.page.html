@@ -1,20 +1,33 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-row class="row">
+
+    <ion-col size="6">
+      <div id="img-paisagem"
+        style="background-image: url('https://images.pexels.com/photos/12366084/pexels-photo-12366084.jpeg?auto=compress&cs=tinysrgb&w=1600')">
+      </div>
+      <!-- <ion-img id="img-paisagem" src="https://images.pexels.com/photos/12317909/pexels-photo-12317909.jpeg?auto=compress&cs=tinysrgb&w=1600"></ion-img> -->
+    </ion-col>
+
+    <ion-col class="row" id="container" size="6">
+      <ion-label class="titulo">Criar Conta</ion-label><br><br><br>
+
+      <ion-input label="Nome" labelPlacement="floating" placeholder="Digite seu nome"></ion-input>
+      <ion-input label="Email" type="email" labelPlacement="floating" placeholder="Digite seu email"></ion-input>
+      <ion-input label="Senha" type="password" labelPlacement="floating" placeholder="Digite sua senha"></ion-input>
+      <ion-input label="Confirmar Senha" type="password" labelPlacement="floating" placeholder="Confirmar senha">
+      </ion-input><br>
+
+      <ion-button class="button-1">Criar Conta</ion-button><br><br><br>
+
+      <ion-label class="texto">Login Com</ion-label><br><br>
+
+      <ion-button size="default" class="button-2">Facebook</ion-button><br><br>
+      <ion-button size="default" class="button-3">Twitter</ion-button><br><br>
+      <ion-button size="default" class="button-4">Google</ion-button>
+
+    </ion-col>
+
+  </ion-row>
+
 </ion-content>
